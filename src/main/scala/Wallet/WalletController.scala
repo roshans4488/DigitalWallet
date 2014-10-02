@@ -36,6 +36,7 @@ import java.text.SimpleDateFormat
 import java.util.ArrayList
 @EnableAutoConfiguration
 @RestController
+@RequestMapping(value = Array("/api/v1"))
 class  WalletConfig  ()  {
 
  var UserMap:Map[Int,User]= Map()
