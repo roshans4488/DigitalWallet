@@ -52,6 +52,15 @@ private  final  var BankAccountcounter: AtomicInteger = new AtomicInteger();
    val MultiMapBankAccount = new HashMap[Int, Set[BankAccount]] with MultiMap[Int, BankAccount]
  //------------------------------------USER---------------------------------------------------------------------------------------
 
+
+@RequestMapping(value = Array(""),method = Array(RequestMethod.GET))
+@ResponseBody
+def greet():String = {
+  return "Hello! Welcome to Digital Wallet app."
+
+}
+
+
  
 @RequestMapping(value = Array("/users/{user_id}"),method = Array(RequestMethod.GET), produces = Array("application/json"))
 @ResponseBody
