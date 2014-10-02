@@ -1,38 +1,41 @@
 package Wallet.Resource
 
-//import javax.persistence.Id
-//import javax.persistence.GeneratedValue
-import java.lang.Long
-//import javax.persistence.Entity
+
+
+
 import scala.beans.BeanProperty
 import org.hibernate.validator.constraints.NotEmpty
+//import org.joda.time.DateTime
+import java.util.Date
 
-//@Entity
 class IDCard{
   
-  //@Id 
- // @GeneratedValue 
-  @BeanProperty 
-  var card_id: Integer = _
-  
-  @BeanProperty
+ 
+
+@BeanProperty
+ protected var card_id: Int = _
+
+
+
+@BeanProperty
   @NotEmpty
-  var card_name: String = _
-  
-  @BeanProperty
+  protected var card_name: String = _
+
+
+@BeanProperty
   @NotEmpty
-  var card_number: String = _
-  
-  
+  protected var card_number: String = _
 
-/*
+
+
+
+
+
   @BeanProperty
-  @NotEmpty
-
-  var expiration_date: DateTime = _
+ protected var expiration_date : String = _
 
 
-  
-*/
+
+
   
 }
